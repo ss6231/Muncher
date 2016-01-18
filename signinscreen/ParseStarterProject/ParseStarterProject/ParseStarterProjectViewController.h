@@ -1,0 +1,24 @@
+/**
+ * Copyright (c) 2015-present, Parse, LLC.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+#import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+
+@interface ParseStarterProjectViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *photo;
+@property (weak, nonatomic) IBOutlet UIButton *signUp;
+@property (weak, nonatomic) IBOutlet UITextField *restaurantName;
+@property (weak, nonatomic) IBOutlet UITextField *address;
+@property (weak, nonatomic) IBOutlet UITextField *cuisine;
+
+- (IBAction)selectPhoto: (UIButton *) sender;
+- (IBAction)submit: (UIButton *) sender;
+
+@end
